@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        div{
+            background-color: rgb(186, 142, 226);
+            color: black;
+            height: 150px;
+            width: 150px;
+        }
+
+        #box1:hover{
+            background-color: blueviolet;
+            color: white;
+            transform:translate(100px);
+            transition: 2s;
+        }
+        /* More than one transform cannot be used.
+        If used, then the latter one will be executed. */
+        
+        #box2:hover{
+            background-color: rgb(178, 2, 172);
+            color: white;
+            transform:rotate(360deg);
+            transition: 3s;
+        }
+
+        #box3:hover{
+            background-color: rgb(38, 35, 190);
+            color: white;
+            transform:scale(1.05);
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <h2>Ananya</h2>
+        <p>FullStack Dev</p>
+    </div>
+    
+    <div id="box2">
+        <h2>HI!</h2>
+    </div>
+
+    <div id="box3">
+        <h2>What's up?</h2>
+    </div>
+
+</body>
+</html>
