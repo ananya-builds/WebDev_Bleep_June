@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Menu</title>
+    <style>
+        body{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+        .hero h1{
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:80px;
+            color:rgb(255, 193, 160);
+            position:absolute;
+            top:130px;
+            left:160px;
+            z-index:5;
+        }
+        .hero button{
+            padding:10px;
+            border-radius:10px;
+            position:absolute;
+            top:300px;
+            left:450px;
+            z-index:5;
+            background-color:rgb(255, 193, 160);
+            border:1px solid black;
+            box-shadow:3px 3px 6px black;
+        }
+        .hero button:hover{
+            background-color:rgb(225, 139, 93);
+            transform:scale(1.04);
+        }
+        a{
+            color:black;
+            font-size:15px;
+            text-decoration:none;
+        }
+        #branding{
+            height:100vh;
+            background-image:url("https://images.pexels.com/photos/33768844/pexels-photo-33768844.jpeg");
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-position:center;
+            background-attachment:fixed;
+            filter:blur(2px) brightness(45%);
+        }
+        main{
+            margin:0px;
+            padding:10px;
+            background-color:rgb(255, 193, 160);
+        }
+        .Menu{
+            width:200px;
+            border:2px solid black;
+            border-radius:15px;
+            padding:15px;
+            margin-bottom:40px;
+            text-align:center;
+            font-family:Arial, Helvetica, sans-serif;
+            box-shadow:5px 5px 10px black;
+            background-color:rgb(247, 209, 163);
+        }
+        .Menu:hover{
+            background-color:rgb(245, 191, 124);
+            transform:scale(1.04);
+            transition:0.5s;
+        }
+        .Menu img{
+            height:140px;
+            width:100%;
+            border-radius:15px;
+        }
+        .Menu h2{
+            border-bottom: 1px solid black;
+            padding-bottom:5px;
+        }
+        .Menu button{
+            border:none;
+            border-radius:15px;
+            padding:10px;
+            width:90%;
+            background-color:blanchedalmond;
+        }
+        .Menu button:hover{
+            background-color:rgb(109, 49, 0);
+            color:white;
+        }
+        #card{
+            display:flex;
+            justify-content:center;
+            gap:40px;
+            flex-wrap:wrap;
+        }
+        main h1{
+            font-size:50px;
+            text-align:center;
+            border-bottom:2px solid black;
+        }
+        footer{
+            margin:0px;
+            padding:0px;
+        }
+        footer p{
+            position:absolute;
+            z-index:1;
+        }
+        footer div{
+            height:30vh;
+            background-image:url("https://images.pexels.com/photos/33768844/pexels-photo-33768844.jpeg");
+            background-repeat:no-repeat;
+            background-position:bottom;
+            background-size:cover;
+            filter:blur(2px) brightness(40%)
+            
+        }
+        footer p{
+            color:white;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section class="hero">
+            <h1>Welcome to Cafe!</h1>
+            <button><a href=#menu>Explore Menu</a></button>
+        </section>
+        <div id="branding">
+
+        </div>
+    </header>
+    <main id="menu">
+        <h1>Menu</h1>
+        <section id="card">
+        <div class="Menu">
+            <img src="https://images.pexels.com/photos/459489/pexels-photo-459489.jpeg">
+            <h2>Coffee</h2>
+            <p>Rs. 199</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="Menu">
+            <img src="https://images.pexels.com/photos/6119128/pexels-photo-6119128.jpeg">
+            <h2>Hot Chocolate</h2>
+            <p>Rs. 199</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="Menu">
+            <img src="https://images.pexels.com/photos/7937485/pexels-photo-7937485.jpeg">
+            <h2>Fruit Smoothie</h2>
+            <p>Rs. 150</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="Menu">
+            <img src="https://images.pexels.com/photos/9240536/pexels-photo-9240536.jpeg">
+            <h2>Sandwich</h2>
+            <p>Rs. 150</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="Menu">
+            <img src="https://images.pexels.com/photos/90609/pexels-photo-90609.png">
+            <h2>Muffin (2pcs)</h2>
+            <p>Rs. 150</p>
+            <button>Buy Now</button>
+        </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; All rights reserved</p>
+        <div>
+        
+        </div>
+    </footer>
+</body>
+</html>

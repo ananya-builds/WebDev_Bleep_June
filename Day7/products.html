@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cards</title>
+    <style>
+        body{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            gap: 20px;
+            align-items:center;
+            flex-wrap:wrap;
+        }
+        .product{
+            border: 1px solid black;
+            width: 250px;
+            padding: 12px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            box-shadow: 4px 4px 8px black;
+        }
+        .product:hover{
+            transform:rotateY(180deg);
+            transition:1s;
+        }
+        .product h2{
+            border-bottom:2px solid black;
+        }
+        .product img{
+            width:100%;
+            height:150px;
+            object-fit:cover;
+            border-radius:12px;
+        }
+        .product button{
+            border: none;
+            background-color:orange;
+            padding:12px;
+            border-radius: 12px;
+            width:90%;
+        }
+        .product button:hover{
+            background-color:rgb(255, 72, 0);
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <img src="https://images.pexels.com/photos/12920900/pexels-photo-12920900.jpeg">
+        <h2>Headphone</h2>
+        <p>Rs. 2,499</p>
+        <button>Buy Now</button>
+    </div>
+    
+    <div class="product">
+        <img src="https://images.pexels.com/photos/5793947/pexels-photo-5793947.jpeg">
+        <h2>Laptop</h2>
+        <p>Rs. 25,000</p>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.pexels.com/photos/569062/pexels-photo-569062.png">
+        <h2>Mobile</h2>
+        <p>Rs. 9,999</p>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.pexels.com/photos/1456733/pexels-photo-1456733.jpeg">
+        <h2>Shoes</h2>
+        <p>Rs. 1,999</p>
+        <button>Buy Now</button>
+    </div>
+
+</body>
+</html>
