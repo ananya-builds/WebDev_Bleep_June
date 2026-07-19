@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Property</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+
+        .products{
+            background-color:aqua;
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px; */
+            /* grid-template-columns:2fr 1fr 1fr; */
+
+            /* grid-template-rows: 50px 80px; */
+            /* grid-template-rows: 2fr 1fr;  */
+
+            grid-template-columns: repeat(3,250px);
+            gap:10px;
+        }
+
+        .box{
+            /* height:100px;
+            width:100px; */
+            background-color:brown;
+            color:white;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="products">
+        <div class="box">Product 1</div>
+        <div class="box">Product 2</div>
+        <div class="box">Product 3</div>
+        <div class="box">Product 4</div>
+        <div class="box">Product 5</div>
+        <div class="box">Product 6</div>
+    </div>
+</body>
+</html>

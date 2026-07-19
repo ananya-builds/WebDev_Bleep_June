@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        nav{
+            background-color:#1f2937;
+            padding: 20px 50px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+
+        }
+        .Menu{
+            display:flex;
+            gap:30px;
+        }
+
+        nav h2{
+            color:white;
+        }
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-size:18px;
+        }
+        nav a:hover{
+            color:gold;
+            transition:0.4s;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>Code Academy</h2>
+
+        <div class="Menu">
+            <a href="#Menu">Home</a>
+            <a href="#Menu">Courses</a>
+            <a href="#Menu">Projects</a>
+            <a href="#Menu">Login</a>
+        </div>
+    </nav>
+</body>
+</html>
